@@ -28,7 +28,7 @@ In order to start a brand new project with react native vector icons, you should
 
 1. clone this repo or download the zip file and unzip it.
 2. Make sure you have both [NodeJS][node] and [npm][npm] installed.
-3. In a terminal, inside the root directory, type `npm install`.
+3. In a terminal, inside the project directory, type `npm install`.
 4. Open your AVD emulator, or set up a real device in order to work with [react native][reactNative] projects.
 5. Run `react-native link` to [load custom fonts](https://stackoverflow.com/questions/43778917/font-family-roboto-light-and-bold-in-react-native)
 6. In a terminal, inside the root directory, type `npm start`.
@@ -38,7 +38,7 @@ In order to start a brand new project with react native vector icons, you should
 
 1. clone this repo or download the zip file and unzip it.
 2. Make sure you have both [NodeJS][node] and [yarn][yarn] installed.
-3. In a terminal, inside the root directory, type `yarn install`.
+3. In a terminal, inside the project directory, type `yarn install`.
 4. Open your emulator or set up a real device in order to work with [react native][reactNative] projects.
 5. Run `react-native link` to [load custom fonts](https://stackoverflow.com/questions/43778917/font-family-roboto-light-and-bold-in-react-native)
 6. In a terminal, inside the root directory, type `yarn start`.
