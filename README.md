@@ -14,7 +14,7 @@ When I worked with [ionic framework](https://ionicframework.com/), one of the be
 
 ### Get started
 
-This is the **Version 2.0** of the ![original React Native Sidemenu Template](https://github.com/darde/react-native-sidemenu/tree/Version-1.0). This template uses the beauty project [react native vector icons][vectorIcons] that allow us to use font icons collections such as [FontAwesome][fontAwesome], [Ionicons][ionicons], [MaterialIcons][materialIcons] and many others. In this version we replaced some components such as the old React Native Navigator and the [Icon.ToolbarAndroid][iconToolbarAndroid] component for the new [React Navigation][reactNavigation] component. The [Redux][redux] library was also added.
+This is the **Version 2.0** of the [original React Native Sidemenu Template](https://github.com/darde/react-native-sidemenu/tree/Version-1.0). This template uses the beauty project [react native vector icons][vectorIcons] that allow us to use font icons collections such as [FontAwesome][fontAwesome], [Ionicons][ionicons], [MaterialIcons][materialIcons] and many others. In this version we replaced some components such as the old React Native Navigator and the [Icon.ToolbarAndroid][iconToolbarAndroid] component for the new [React Navigation][reactNavigation] component. The [Redux][redux] library was also added.
 
 In order to start a brand new project with react native vector icons, you should follow the [instalation steps](https://github.com/oblador/react-native-vector-icons#installation), which is not necessary for this template that already has the library installed. So, to get started with react native side menu template just follow the steps below:
 
@@ -29,9 +29,10 @@ In order to start a brand new project with react native vector icons, you should
 1. clone this repo or download the zip file and unzip it.
 2. Make sure you have both [NodeJS][node] and [npm][npm] installed.
 3. In a terminal, inside the root directory, type `npm install`.
-4. Open your emulator or set up a real device in order to work with [react native][reactNative] projects.
-5. In a terminal, inside the root directory, type `npm start`.
-6. After `npm start` run successfully, in the same local, type `react-native run-android`.
+4. Open your AVD emulator, or set up a real device in order to work with [react native][reactNative] projects.
+5. Run `react-native link` to [load custom fonts](https://stackoverflow.com/questions/43778917/font-family-roboto-light-and-bold-in-react-native)
+6. In a terminal, inside the root directory, type `npm start`.
+7. After `npm start` run successfully, in the same directory type `react-native run-android`.
 
 #### Installation with yarn (Recommended)
 
@@ -39,8 +40,9 @@ In order to start a brand new project with react native vector icons, you should
 2. Make sure you have both [NodeJS][node] and [yarn][yarn] installed.
 3. In a terminal, inside the root directory, type `yarn install`.
 4. Open your emulator or set up a real device in order to work with [react native][reactNative] projects.
-5. In a terminal, inside the root directory, type `yarn start`.
-6. After `yarn start` run successfully, in the same directory, type `react-native run-android`.
+5. Run `react-native link` to [load custom fonts](https://stackoverflow.com/questions/43778917/font-family-roboto-light-and-bold-in-react-native)
+6. In a terminal, inside the root directory, type `yarn start`.
+7. After `yarn start` run successfully, in the same directory, type `react-native run-android`.
 
 That's all, now you can change the project according to your needs. If you prefer, you can start a brand new project typing `react-native init myApp`, install the [react native vector icons][vectorIcons], and copy all the `app` folder to your project, as well change the `index.android.js` and `package.json` files accordingly.
 
