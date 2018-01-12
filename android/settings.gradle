@@ -1,4 +1,4 @@
-rootProject.name = 'sidemenu'
+rootProject.name = 'android_side_menu'
 
 include ':app'
 

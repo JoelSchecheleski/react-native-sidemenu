@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   View,
   ScrollView,
@@ -6,25 +6,24 @@ import {
   Linking,
   StyleSheet
 } from 'react-native';
-
 import Icon from 'react-native-vector-icons/Ionicons';
 
-const About = () => {
-  return (
-    <ScrollView contentContainerStyle={styles.view}>
+const About = () => (
+  <ScrollView contentContainerStyle={styles.view}>
       <Text style={styles.h1}>About</Text>
-      <Text style={[styles.text, styles.p]}>This is a React Native template. It is a
-        sidemenu boilerplate. It has some awesome features such as DrawerLayoutAndroid,
-        ToolbarAndroid, Navigator, <Text onPress={() =>
+      <Text style={[styles.text, styles.p]}>This is the second version of my React Native template. It is a
+        sidemenu boilerplate for Android. It has some awesome features such as the new <Text onPress={() =>
+          Linking.openURL('https://reactnavigation.org/')}
+          style={styles.linkCredits}
+        >React Navigation</Text> component, as well the awesom <Text onPress={() =>
           Linking.openURL('https://github.com/oblador/react-native-vector-icons')}
           style={styles.linkCredits}
-        >
-          React Native Vector Icons, </Text> Android overflow menu, e much more.
+        >React Native Vector Icons, </Text> Android overflow menu, e much more.
       </Text>
       <Text style={[styles.text, styles.p]}>You can use this project as a
         starting point for yours, as well as collaborate with improvements
         by github pull requests. This is a simple prototype and can be
-        improved.</Text>
+        modified according to your needs.</Text>
       <Text style={[styles.text, styles.p]}>Thank you for trying my template.</Text>
       <Text style={styles.signature}>Pablo Rodrigo Darde</Text>
       <Text style={styles.position}>Front end engineer</Text>
@@ -47,8 +46,11 @@ const About = () => {
         </Text>
       </View>
     </ScrollView>
-  );
-}
+);
+
+About.navigationOptions = ({ navigation }) => ({
+  title: 'About',
+});
 
 const styles = StyleSheet.create({
   view: {

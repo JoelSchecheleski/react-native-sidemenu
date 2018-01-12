@@ -1,29 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   ScrollView,
-  View,
+  StyleSheet,
   Text,
+  View,
   Image,
-  StyleSheet
 } from 'react-native';
 
-const Home = () => {
-  return (
-    <ScrollView contentContainerStyle={styles.view}>
-      <Text style={styles.header1}>Lighthouses</Text>
-      <Image
-        source={{uri: 'cover'}}
-        style={styles.img}
-      />
-      <Text style={styles.photo}>
-        Pigeon Point Lighthouse, Pescadero, California
-      </Text>
-      <Text style={styles.text}>
-        Know the most beautiful lighthouses of the world.
-      </Text>
-    </ScrollView>
-  );
-}
+const Home = () => (
+  <ScrollView contentContainerStyle={styles.view}>
+    <Text style={styles.header1}>Lighthouses</Text>
+    <Image
+      source={require('../img/cover.jpg')}
+      style={styles.img}
+    />
+    <Text style={styles.photo}>
+      Pigeon Point Lighthouse, Pescadero, California
+    </Text>
+    <Text style={styles.text}>
+      Know the most beautiful lighthouses of the world.
+    </Text>
+  </ScrollView>
+);
+
+Home.navigationOptions = ({ navigation }) => ({
+  title: 'Home',
+});
 
 const styles = StyleSheet.create({
   view: {

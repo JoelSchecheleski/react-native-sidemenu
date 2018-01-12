@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   View,
   ScrollView,
   Text,
+  Linking,
   StyleSheet
 } from 'react-native';
 
-const Credits = () => {
-  return (
-    <ScrollView contentContainerStyle={styles.view}>
+const Credits = () => (
+  <ScrollView contentContainerStyle={styles.view}>
       <Text style={styles.h1}>Credits</Text>
       <Text style={[styles.text, styles.p]}>This template uses images
         from <Text onPress={() =>
@@ -25,8 +25,11 @@ const Credits = () => {
         React Native Vector Icons</Text>.
       </Text>
     </ScrollView>
-  );
-}
+);
+
+Credits.navigationOptions = ({ navigation }) => ({
+  title: 'Credits',
+});
 
 const styles = StyleSheet.create({
   view: {
