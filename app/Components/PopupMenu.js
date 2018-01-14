@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { headerColor } from '../styles';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/Ionicons'
 import {
   View,
   UIManager,
@@ -10,9 +10,17 @@ import {
   TouchableOpacity,
 }from 'react-native';
 
-class OverflowMenu extends Component {
-  handleShowPopupError = () => {
-    <Text>There is an error trying to open the overflow menu.</Text>
+const ICON_SIZE = 24;
+
+class PopupMenu extends Component {
+  static propTypes = {
+    // array of strings, will be list items of Menu
+    labels:  PropTypes.arrayOf(PropTypes.string).isRequired,
+    onPress: PropTypes.func.isRequired
+  }
+
+  onError = () => {
+    console.log('There is an error.')
   };
 
   handleMenuPress = () => {
@@ -20,7 +28,7 @@ class OverflowMenu extends Component {
     UIManager.showPopupMenu(
       findNodeHandle(this.refs.menu),
       labels,
-      this.handleShowPopupError,
+      this.onError,
       (result, index) => {
         if (onPress) {
           onPress({ action: 'menu', result, index });
@@ -45,9 +53,4 @@ class OverflowMenu extends Component {
   }
 }
 
-OverflowMenu.propTypes = {
-  labels: PropTypes.array.isRequired,
-  onPress: PropTypes.func.isRequired,
-};
-
-export default OverflowMenu;
+export default PopupMenu;

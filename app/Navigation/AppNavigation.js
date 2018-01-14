@@ -21,7 +21,7 @@ import Bass from '../views/Bass';
 import About from '../views/About';
 import Credits from '../views/Credits';
 import SideMenu from '../Components/SideMenu';
-import OverflowMenu from '../Components/OverflowMenu';
+import PopupMenu from '../Components/PopupMenu';
 import AppBarLeft from '../Components/AppBarLeft';
 import {
   bgHeader,
@@ -41,7 +41,7 @@ const openOverflowMenuScreens = (e, navigation) => {
       navigation.navigate('credits');
       break;
     default:
-      navigation.navigate('about');
+      return;
   }
 }
 
@@ -77,7 +77,7 @@ const setNavigationOptions = (idx) => ({
     headerTitleStyle: styles.headerTitle,
     headerTintColor: headerColor,
     headerLeft: <AppBarLeft navigation={navigation} />,
-    headerRight: <OverflowMenu
+    headerRight: <PopupMenu
       labels={['About', 'Credits']}
       onPress={(e) => { openOverflowMenuScreens(e, navigation); }}
     />,
