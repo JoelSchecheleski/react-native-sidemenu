@@ -14,7 +14,7 @@ When I worked with [ionic framework](https://ionicframework.com/), one of the be
 
 ### Get started
 
-This is the **Version 2.0** of the [original React Native Sidemenu Template](https://github.com/darde/react-native-sidemenu/tree/Version-1.0). This template uses the beauty project [react native vector icons][vectorIcons] that allow us to use font icons collections such as [FontAwesome][fontAwesome], [Ionicons][ionicons], [MaterialIcons][materialIcons] and many others. In this version we replaced some components such as the old React Native Navigator and the [Icon.ToolbarAndroid][iconToolbarAndroid] component for the new [React Navigation][reactNavigation] component. The [Redux][redux] library was also added.
+This is the **Version 2.0** of the [original React Native Sidemenu Template](https://github.com/darde/react-native-sidemenu/tree/Version-1.0). This template uses the beauty project [react native vector icons][vectorIcons] that allow us to use font icons collections such as [FontAwesome][fontAwesome], [Ionicons][ionicons], [MaterialIcons][materialIcons] and many others. In this version I replaced some components such as the old React Native Navigator and the [Icon.ToolbarAndroid][iconToolbarAndroid] component with the new [React Navigation][reactNavigation] component. The [Redux][redux] library was also added.
 
 In order to start a brand new project with react native vector icons, you should follow the [instalation steps](https://github.com/oblador/react-native-vector-icons#installation), which is not necessary for this template that already has the library installed. So, to get started with react native side menu template just follow the steps below:
 
